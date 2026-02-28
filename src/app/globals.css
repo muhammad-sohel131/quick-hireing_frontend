@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brandColor: #4640DE;
+  --accentColor: #26A4FF;
+  --neutrals-100: #25324B;
+  --neutrals-80: #515B6F;
+  --neutrals-20: #D6DDEB;
+  --color-black: #202430;
+  --color-white: #FFFFFF;
 }
 
 @theme inline {
