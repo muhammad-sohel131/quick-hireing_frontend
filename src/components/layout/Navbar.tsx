@@ -8,8 +8,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="cs-container py-5">
-      <div className="flex items-center justify-between">
+    <nav className="bg-[#F8F8FD]">
+      <div className="flex cs-container py-5 items-center justify-between">
         {/* Left */}
         <div className="flex items-center gap-5">
           <Image src="/images/Logo.png" height={36} width={152} alt="logo" />

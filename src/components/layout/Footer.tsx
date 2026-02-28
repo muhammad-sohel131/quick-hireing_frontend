@@ -4,7 +4,7 @@ import { FaDribbble, FaFacebook, FaFacebookF, FaLinkedinIn, FaTwitter } from "re
 
 export default function Footer() {
   return (
-    <footer className="bg-[var(--color-black)] text-[var(--color-white)] mt-20">
+    <footer className="bg-[var(--color-black)] text-[var(--color-white)]">
       <div className="cs-container py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <Image src="/images/footerLogo.png" height={36} width={152} alt="logo" />

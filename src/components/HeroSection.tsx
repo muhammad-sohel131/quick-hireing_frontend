@@ -4,10 +4,10 @@ import { IoLocationOutline } from "react-icons/io5";
 
 export default function HeroSection() {
   return (
-    <section className="cs-container py-12 lg:py-20">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="bg-[#F8F8FD] relative overflow-hidden">
+      <div className="grid lg:grid-cols-2 gap-12 items-center cs-container pt-12 lg:pt-20">
         {/* Text */}
-        <div>
+        <div className="pb-12">
           <h1 className="text-[72px] lg:text-[72px] font-bold leading-tight text-[var(--neutrals-100)]">
             Discover <br />
             more than <br />
@@ -26,7 +26,7 @@ export default function HeroSection() {
           </p>
 
           {/* Search */}
-          <div className="mt-6 bg-white lg:p-3 flex flex-col justify-between lg:flex-row gap-3 lg:w-[850px] relative z-10">
+          <div className="mt-6 bg-white lg:p-3 flex flex-col justify-between lg:flex-row gap-3 lg:w-[850px] relative z-20">
             <div className="flex gap-2 items-center">
               <CiSearch />
               <input
@@ -51,10 +51,10 @@ export default function HeroSection() {
         </div>
 
         {/* Image */}
-        <div className="lg:flex hidden justify-center lg:justify-end relative">
+        <div className="lg:flex hidden justify-center lg:justify-end relative mt-[30px]">
           <Image
             src="/images/bannerPeople.png"
-            className="w-[260px] h-[340px] lg:w-[420px] lg:h-[520px]"
+            className="w-[260px] h-[340px] lg:w-[420px] lg:h-[520px] relative z-10"
             width={500}
             height={500}
             alt="banner_people"
@@ -62,13 +62,14 @@ export default function HeroSection() {
 
           <Image
             src="/images/banner_pattern.png"
-            className="absolute -z-10 scale-150 -top-10"
+            className="absolute  scale-150 -top-10"
             width={2000}
             height={2000}
             alt="banner_pattern"
           />
         </div>
       </div>
+      <Image src='/images/heroShape.png' alt="heroshape" width={600} height={200} className="absolute hidden lg:block bottom-0 right-0 z-20" />
     </section>
   );
 }
