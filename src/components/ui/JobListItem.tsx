@@ -1,24 +1,34 @@
+
+import Image from "next/image";
 import Tag from "./Tag";
+import { Job} from "@/app/types/jobs";
 
-interface JobListItemProps {
-  logo: string;
-  title: string;
-  company: string;
-  location: string;
-  tags: { text: string; color: string }[];
+const color = {
+  Marketing: "#FEC89A",
+  Design: "#C7C9FF",
+  Business: "",
+  Technology: "",
+  Engineering: "",
+  Finance: "",
+  "Human Resource": ""
 }
-
 export default function JobListItem({
-  logo,
+  companyImageUrl,
+  category,
   title,
   company,
   location,
-  tags,
-}: JobListItemProps) {
+}: Job) {
   return (
     <div className="flex bg-white justify-between items-center p-4 border border-[var(--neutrals-20)] rounded-xl hover:shadow-md transition">
       <div className="flex items-center gap-4">
-        <img src={logo} alt={company} className="w-8 h-8" />
+        <Image
+          width={200}
+          height={200}
+          src={companyImageUrl}
+          alt={company}
+          className="w-8 h-8"
+        />
         <div>
           <div>
             <h3 className="font-semibold text-[var(--neutrals-100)] text-sm">
@@ -29,8 +39,8 @@ export default function JobListItem({
             </p>
           </div>
           <div className="flex gap-2 mt-5">
-            {tags.map((tag) => (
-              <Tag key={tag.text} {...tag} />
+            {category.map((c) => (
+              <Tag key={c} text={c} color={color[c]} />
             ))}
           </div>
         </div>

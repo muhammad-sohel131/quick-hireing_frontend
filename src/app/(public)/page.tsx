@@ -1,9 +1,9 @@
-import CategoriesSection from "@/components/CategoriesSection";
-import Companies from "@/components/Companies";
-import CTASection from "@/components/CTASection";
-import FeaturedJobs from "@/components/FeaturedJobs";
-import HeroSection from "@/components/HeroSection";
-import LatestJobs from "@/components/LatestJobs";
+import CategoriesSection from "@/components/ui/CategoriesSection";
+import Companies from "@/components/ui/Companies";
+import CTASection from "@/components/ui/CTASection";
+import FeaturedJobs from "@/components/ui/FeaturedJobs";
+import HeroSection from "@/components/ui/HeroSection";
+import LatestJobs from "@/components/ui/LatestJobs";
 
 export default function Home() {
   return (
