@@ -8,7 +8,7 @@ const BASE = process.env.NEXT_PUBLIC_BACKEND_URL as string;
 export const useAuth = () => {
   const queryClient = useQueryClient();
 
-  const { data: user = null, isLoading: loginLoading  } = useQuery<IUser>({
+  const { data: user = null, isLoading: loginLoading  } = useQuery<IUser | null>({
     queryKey: ["user"],
     queryFn: fetchMe
   });

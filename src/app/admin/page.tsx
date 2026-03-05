@@ -5,10 +5,11 @@ import LoginForm from "@/components/ui/LoginForm";
 import Loading from "@/components/ui/Loading";
 import JobForm from "@/components/ui/JobForm";
 import JobList from "@/components/ui/JobList";
+import Link from "next/link";
+import { BiLeftArrow, BiLeftArrowAlt } from "react-icons/bi";
 
 export default function AdminJobsPage() {
   const { user, loginLoading } = useAuth();
-
   if (loginLoading) {
     return <Loading />;
   }
@@ -30,6 +31,7 @@ export default function AdminJobsPage() {
             </p>
           </div>
           <div className="flex items-center gap-3">
+            <Link className="flex items-center gap-2" href="/"><BiLeftArrowAlt /> Back To Home</Link>
             <div className="w-10 h-10 bg-[var(--brandColor)] rounded-full flex items-center justify-center text-white font-semibold">
               {user.email?.charAt(0).toUpperCase()}
             </div>
