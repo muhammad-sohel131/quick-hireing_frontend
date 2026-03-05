@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Job Portal Frontend
 
-## Getting Started
+A modern **Quick Hire web application** built with **Next.js, TypeScript, Tailwind CSS, and React Query**.
+This frontend connects with the **Quick Hire Backend API** to display job listings, allow users to apply for jobs, and enable administrators to manage job postings.
 
-First, run the development server:
+The platform provides a clean UI for browsing jobs and an admin dashboard for managing job data.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+# 🚀 Features
+
+* Browse available job listings
+* View detailed job information
+* Apply for jobs with resume link and cover note
+* Admin dashboard for job management
+* Create and delete jobs
+* Modern responsive UI
+* API integration with backend server
+* Data fetching using React Query
+
+---
+
+# 🛠 Tech Stack
+
+* **Next.js**
+* **TypeScript**
+* **Tailwind CSS**
+* **React Query**
+* **Axios**
+* **React Hooks**
+
+---
+
+# ⚙️ Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```id="d1rmj2"
+NEXT_PUBLIC_BACKEND_URL=http://localhost:5000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This variable connects the frontend with the backend API.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 📦 Installation
 
-## Learn More
+Clone the repository
 
-To learn more about Next.js, take a look at the following resources:
+```id="7h9s02"
+git clone https://github.com/muhammad-sohel131/quick-hireing_frontend.git
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Navigate to the project directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```id="yo7g29"
+cd job-portal-frontend
+```
 
-## Deploy on Vercel
+Install dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```id="t2u1c8"
+npm install
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+# ▶️ Run the Project
+
+### Development mode
+
+```id="s2m4ye"
+npm run dev
+```
+
+The application will run at:
+
+```id="y1p34m"
+http://localhost:3000
+```
+
+---
+
+# 🔗 Backend Requirement
+
+This frontend requires the **Job Portal Backend API** to be running.
+
+Backend should run at:
+
+```id="w3e7yz"
+http://localhost:5000
+```
+
+---
+
+
+
+# 📌 Notes
+
+* Ensure the backend server is running before starting the frontend.
+* Make sure `.env.local` is configured correctly.
+* Do not commit `.env.local` files to the repository.
+
+---
+
+# 👨‍💻 Author
+
+**Md Sohel**
+Full Stack Developer — Sardar IT
+Aspiring Software Engineer
