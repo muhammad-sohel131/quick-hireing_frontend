@@ -32,7 +32,7 @@ export default function AdminJobsPage() {
    }
   }
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[var(--background)] to-[var(--neutrals-20)]">
+    <div className="min-h-screen bg-gray">
       <div className="cs-container py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Header with User Info */}
         <div className="flex justify-between items-center mb-8">
