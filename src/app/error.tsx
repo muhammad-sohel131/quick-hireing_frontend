@@ -14,7 +14,7 @@ export default function Error({
                 <h2 className="text-xl font-bold">Something went wrong!</h2>
                 <p>{error.message}</p>
 
-                <div className="flex gap-5">
+                <div className="flex gap-5 justify-center">
                     <button
                         onClick={() => reset()}
                         className="mt-4 px-4 py-2 bg-[var(--brandColor)] text-white rounded"

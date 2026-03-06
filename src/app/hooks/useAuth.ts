@@ -8,7 +8,7 @@ const BASE = process.env.NEXT_PUBLIC_BACKEND_URL as string;
 export const useAuth = () => {
   const queryClient = useQueryClient();
 
-  const { data: user = null, isLoading: loginLoading  } = useQuery<IUser | null>({
+  const { data: user = null, isLoading: loginLoading } = useQuery<IUser | null>({
     queryKey: ["user"],
     queryFn: fetchMe
   });
@@ -24,11 +24,23 @@ export const useAuth = () => {
       queryClient.invalidateQueries({ queryKey: ["user"] });
     },
   });
+  const logout = useMutation({
+    mutationFn: async () => {
+      const res = await axios.post(`${BASE}/api/auth/logout`, null, {
+        withCredentials: true,
+      });
+      return res.data;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["user"] });
+    },
+  });
 
-  
+
   return {
     user,
     login,
-    loginLoading 
+    loginLoading,
+    logout
   };
 };

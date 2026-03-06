@@ -42,7 +42,7 @@ export default async function JobPage({ searchParams }: Props) {
 
   return (
     <>
-      <div className="bg-blue-900 h-[30vh] flex items-center justify-center">
+      <div className="bg-[var(--brandColor)] h-[30vh] flex items-center justify-center">
         <Search />
       </div>
 
