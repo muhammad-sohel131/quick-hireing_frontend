@@ -45,14 +45,12 @@ export default function JobCard({
           <Tag key={c} text={c} color="#C2F0E9" />
         ))}
       </div>
-      {link && (
-        <Link
-          href={`/jobs/${_id}`}
-          className="bg-[var(--brandColor)] text-white px-5 py-2 text-center my-5 rounded"
-        >
-          See Details
-        </Link>
-      )}
+      <Link
+        href={`/jobs/${_id}`}
+        className="bg-[var(--brandColor)] text-white px-5 py-2 text-center my-5 rounded"
+      >
+        See Details
+      </Link>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 interface Props {
@@ -10,7 +11,7 @@ interface Props {
 
 export default function CategoryCard({ title, jobs, Icon, active }: Props) {
   return (
-    <div
+    <Link href={`/jobs?category=${title.toLowerCase()}`}
       className={`p-4 rounded-lg border flex items-center justify-between ${
         active
           ? "bg-[var(--brandColor)] text-[var(--color-white)]"
@@ -35,6 +36,6 @@ export default function CategoryCard({ title, jobs, Icon, active }: Props) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
