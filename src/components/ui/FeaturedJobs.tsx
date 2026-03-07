@@ -14,7 +14,7 @@ export default function FeaturedJobs() {
   return (
     <section className="cs-container py-14">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-xl lg:text-5xl font-bold text-[var(--neutrals-100)]">
+        <h2 className="text-4xl lg:text-5xl font-clash font-bold mb-6 text-[var(--neutrals-100)]">
           Featured <span className="text-[var(--accentColor)]">jobs</span>
         </h2>
         <Link

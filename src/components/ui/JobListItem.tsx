@@ -31,10 +31,10 @@ export default function JobListItem({
         />
         <div>
           <div>
-            <h3 className="font-semibold text-[var(--neutrals-100)] text-sm">
+            <h3 className="font-semibold text-[var(--neutrals-100)] text-xl">
               {title}
             </h3>
-            <p className="text-xs text-[var(--neutrals-80)]">
+            <p className="text-[16px] text-[var(--neutrals-80)]">
               {company} • {location}
             </p>
           </div>

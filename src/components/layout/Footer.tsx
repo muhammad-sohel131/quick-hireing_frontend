@@ -8,14 +8,14 @@ export default function Footer() {
       <div className="cs-container py-16 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <Image src="/images/footerLogo.png" height={36} width={152} alt="logo" />
-          <p className="text-sm mt-4 text-[var(--neutrals-20)]">
+          <p className="text-[16px] mt-4 text-[var(--neutrals-20)]">
             Great platform for the job seeker that passionate about startups. Find your dream job easier.
           </p>
         </div>
         <div className="grid grid-cols-2 gap-10">
         <div>
-          <h4 className="font-semibold mb-4">About</h4>
-          <ul className="space-y-2 text-sm text-[var(--neutrals-20)]">
+          <h4 className="font-semibold text-lg mb-4">About</h4>
+          <ul className="space-y-2 text-[16px] text-[var(--neutrals-20)]">
             <li>Companies</li>
             <li>Pricing</li>
             <li>Advice</li>
@@ -24,8 +24,8 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-semibold mb-4">Resources</h4>
-          <ul className="space-y-2 text-sm text-[var(--neutrals-20)]">
+          <h4 className="font-semibold mb-4 text-lg">Resources</h4>
+          <ul className="space-y-2 text-[16px] text-[var(--neutrals-20)]">
             <li>Help Docs</li>
             <li>Guide</li>
             <li>Updates</li>
@@ -34,16 +34,16 @@ export default function Footer() {
         </div>
  </div>
         <div>
-          <h4 className="font-semibold mb-4">Get job notifications</h4>
-          <p className="text-sm mt-4 text-[var(--neutrals-20)] mb-6">
+          <h4 className="font-semibold text-lg mb-4">Get job notifications</h4>
+          <p className="text-[16px] mt-4 text-[var(--neutrals-20)] mb-6">
             The latest job news, articles, sent to your inbox weekly.
           </p>
           <div className="flex flex-col md:flex-row gap-2">
             <input
-              className="flex-1 px-3 py-2 text-black bg-white text-sm"
+              className="flex-1 px-5 py-4 text-black bg-white text-sm"
               placeholder="Email address"
             />
-            <button className="bg-[var(--brandColor)] px-4 text-sm">
+            <button className="bg-[var(--brandColor)] px-5 py-4 text-lg font-bold">
               Subscribe
             </button>
           </div>

@@ -21,7 +21,7 @@ export default function CategoryCard({ title, jobs, Icon, active }: Props) {
         <Image src={Icon} alt="icon" width={48} height={48} className="mb-5" />
         <div>
           <h3
-            className={`font-semibold text-2xl ${active ? "text-white" : "text-[var(--neutrals-100)]"}`}
+            className={`font-semibold font-clash lg:text-2xl text-xl ${active ? "text-white" : "text-[var(--neutrals-100)]"}`}
           >
             {title}
           </h3>

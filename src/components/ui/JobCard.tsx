@@ -30,14 +30,14 @@ export default function JobCard({
         </span>
       </div>
 
-      <h3 className="font-semibold text-[var(--neutrals-100)] text-sm">
+      <h3 className="font-semibold text-[var(--neutrals-100)] text-lg">
         {title}
       </h3>
-      <p className="text-xs text-[var(--neutrals-80)]">
+      <p className="text-[16px] text-[var(--neutrals-80)]">
         {company} &bull; {location}
       </p>
 
-      <p className="text-xs text-[var(--neutrals-80)]">
+      <p className="text-[16px] font-inter text-[var(--neutrals-80)]">
         {description.slice(0, 100)}...
       </p>
       <div className="flex flex-wrap gap-2 mt-2">

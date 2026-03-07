@@ -32,7 +32,7 @@ export default function JobForm() {
   });
 
   const [selectedCategories, setSelectedCategories] = useState<JobCategory[]>(
-    []
+    [],
   );
 
   const validate = () => {
@@ -58,7 +58,7 @@ export default function JobForm() {
       newErrors.companyImageUrl = "Company logo URL is required";
     } else if (
       !/^https:\/\/res\.cloudinary\.com\/.*\/image\/upload\/.*$/.test(
-        form.companyImageUrl
+        form.companyImageUrl,
       )
     ) {
       newErrors.companyImageUrl = "Logo must be a valid Cloudinary image URL";
@@ -72,7 +72,7 @@ export default function JobForm() {
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
+    >,
   ) => {
     const value =
       e.target.type === "checkbox"
@@ -142,7 +142,6 @@ export default function JobForm() {
 
       <div className="p-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          
           {/* Job Title */}
           <div>
             <label className="block text-sm mb-2">Job Title</label>
@@ -260,20 +259,38 @@ export default function JobForm() {
               className="w-full px-4 py-3 rounded-xl border"
             />
             {errors.description && (
-              <p className="text-red-500 text-xs mt-1">
-                {errors.description}
-              </p>
+              <p className="text-red-500 text-xs mt-1">{errors.description}</p>
             )}
           </div>
         </div>
 
+        <div className="flex items-center gap-3 mt-4">
+          <input
+            type="checkbox"
+            name="isFeatured"
+            checked={form.isFeatured}
+            onChange={handleChange}
+            className="w-4 h-4 cursor-pointer"
+          />
+
+          <label className="flex items-center gap-1 text-sm font-medium">
+            Mark as Featured Job
+          </label>
+        </div>
         <div className="flex justify-end mt-6">
           <button
             onClick={handleSubmit}
             disabled={createJob.isPending}
             className="bg-[var(--brandColor)] text-white px-8 py-3 rounded-xl flex items-center gap-2"
           >
-            {createJob.isPending ? "Creating..." : <> <BiPlus /> Create Job </>}
+            {createJob.isPending ? (
+              "Creating..."
+            ) : (
+              <>
+                {" "}
+                <BiPlus /> Create Job{" "}
+              </>
+            )}
           </button>
         </div>
       </div>

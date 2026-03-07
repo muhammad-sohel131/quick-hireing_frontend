@@ -4,7 +4,7 @@ import CategoryCard from "./CategoryCard";
 export default function CategoriesSection() {
   return (
     <section className="cs-container py-14">
-      <h2 className="text-xl lg:text-5xl font-bold mb-6 text-[var(--neutrals-100)]">
+      <h2 className="text-4xl lg:text-5xl font-clash font-bold mb-6 text-[var(--neutrals-100)]">
         Explore by <span className="text-[var(--accentColor)]">category</span>
       </h2>
 

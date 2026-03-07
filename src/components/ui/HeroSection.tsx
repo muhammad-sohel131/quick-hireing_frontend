@@ -7,14 +7,14 @@ export default function HeroSection() {
       <div className="grid lg:grid-cols-2 gap-12 items-center cs-container pt-12 lg:pt-20">
         {/* Text */}
         <div className="pb-12">
-          <h1 className="text-[72px] lg:text-[72px] font-bold leading-tight text-[var(--neutrals-100)]">
+          <h1 className="text-[48px] lg:text-[72px] font-clash font-bold leading-tight text-[var(--neutrals-100)]">
             Discover <br />
             more than <br />
             <span className="text-[var(--accentColor)]">5000+ Jobs</span>
           </h1>
           <Image
             src="/images/underLine.png"
-            className=""
+            className="max-w-[300px] lg:max-w-[600px]"
             width={500}
             height={100}
             alt="banner_pattern"
@@ -26,7 +26,9 @@ export default function HeroSection() {
 
           {/* Search */}
           <Search />
-          <p className="text-[16px] text-[var(--neutrals-80)]">Popular : UI Designer, UX Researcher, Android, Admin</p>
+          <p className="text-[16px] text-[var(--color-black)] py-2">
+            Popular : UI Designer, UX Researcher, Android, Admin
+          </p>
         </div>
 
         {/* Image */}
@@ -48,7 +50,13 @@ export default function HeroSection() {
           />
         </div>
       </div>
-      <Image src='/images/heroShape.png' alt="heroshape" width={600} height={200} className="absolute hidden lg:block bottom-0 right-0 z-20" />
+      <Image
+        src="/images/heroShape.png"
+        alt="heroshape"
+        width={600}
+        height={200}
+        className="absolute hidden lg:block bottom-0 right-0 z-20"
+      />
     </section>
   );
 }

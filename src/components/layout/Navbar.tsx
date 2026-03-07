@@ -20,7 +20,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex text-[16px] items-center gap-8 text-[var(--neutrals-80)]">
+          <div className="hidden font-medium md:flex text-[16px] items-center gap-8 text-[var(--neutrals-80)]">
             <Link href="/jobs" className="cursor-pointer">
               Find Jobs
             </Link>
@@ -29,9 +29,9 @@ export default function Navbar() {
         </div>
 
         {/* Right - Desktop */}
-        {user ? <><Link href="/admin" className="bg-[var(--brandColor)] text-white px-5 py-2 rounded">Dashboard</Link></> : <><div className="hidden md:flex items-center gap-4 text-[16px]">
-          <Link href="/admin" className="text-[var(--brandColor)]">Login</Link>
-          <button className="bg-[var(--brandColor)] text-white px-5 py-2 rounded">
+        {user ? <><Link href="/admin" className="bg-[var(--brandColor)] text-white px-5 py-2 rounded font-bold">Dashboard</Link></> : <><div className="hidden md:flex items-center gap-4 text-[16px]">
+          <Link href="/admin" className="text-[var(--brandColor)] font-bold">Login</Link>
+          <button className="bg-[var(--brandColor)] text-white px-5 py-2 font-bold">
             Sign Up
           </button>
         </div></>}
@@ -39,7 +39,7 @@ export default function Navbar() {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-2xl p-2 hover:bg-[var(--neutrals-20)] rounded-lg transition-colors"
+          className="md:hidden text-2xl p-2 hover:bg-[var(--neutrals-20)] bg-white rounded-full transition-colors"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >

@@ -32,7 +32,7 @@ export default function Search() {
   };
 
   return (
-    <div className="mt-6 bg-white lg:p-3 flex flex-col justify-between lg:flex-row gap-3 lg:w-[850px] relative z-20">
+    <div className="mt-6 bg-white p-3 flex flex-col justify-between lg:flex-row gap-3 lg:w-[850px] relative z-20">
       
       {/* Search Input */}
       <div className="flex gap-2 items-center">
@@ -40,7 +40,7 @@ export default function Search() {
         <input
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="lg:w-[280px] w-full py-2 px-4 outline-none text-sm"
+          className="lg:w-[280px] w-full py-2 px-4 outline-none text-sm border-b border-[var(--neutrals-20)]"
           placeholder="Job title or keyword"
         />
       </div>
@@ -51,21 +51,21 @@ export default function Search() {
         <select
           value={location}
           onChange={(e) => setLocation(e.target.value)}
-          className="lg:w-[280px] w-full outline-none text-sm bg-transparent cursor-pointer"
+          className="lg:w-[280px] border-b border-[var(--neutrals-20)] py-2 px-4 w-full outline-none text-sm bg-transparent cursor-pointer"
         >
           <option value="">Select location</option>
           <option value="remote">Remote</option>
           <option value="dhaka">Dhaka</option>
-          <option value="florence">Florence, Italy</option>
-          <option value="rome">Rome, Italy</option>
-          <option value="milan">Milan, Italy</option>
+          <option value="khulna">Khulna</option>
+          <option value="bhola">Bhola</option>
+          <option value="canada">Canda</option>
         </select>
       </div>
 
       {/* Search Button */}
       <button
         onClick={handleSearch}
-        className="bg-[var(--brandColor)] cursor-pointer w-full text-center text-[var(--color-white)] px-7 py-4 text-sm"
+        className="bg-[var(--brandColor)] cursor-pointer w-full text-center text-[var(--color-white)] font-bold px-7 py-4 text-lg"
       >
         Search my job
       </button>
