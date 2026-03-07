@@ -97,7 +97,7 @@ export default function ApplyJobForm({ jobId }: ApplyJobFormProps) {
   return (
     <div className="bg-white my-10 rounded-2xl shadow-xl border border-[var(--neutrals-20)] overflow-hidden mt-12">
       {/* Header */}
-      <div className="bg-gradient-to-r from-[var(--brandColor)] to-[var(--accentColor)] px-6 py-4">
+      <div className="bg-[var(--brandColor)] px-6 py-4">
         <h2 className="text-lg font-semibold text-white flex items-center gap-2">
           <BiSend />
           Apply for this Job

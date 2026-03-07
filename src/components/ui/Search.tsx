@@ -28,7 +28,7 @@ export default function Search() {
       params.delete("location");
     }
 
-    router.push(`/jobs/${pathname}?${params.toString()}`);
+    router.push(`/jobs?${params.toString()}`);
   };
 
   return (

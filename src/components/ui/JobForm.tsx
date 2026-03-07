@@ -134,7 +134,7 @@ export default function JobForm() {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl border border-[var(--neutrals-20)] overflow-hidden mb-8">
-      <div className="bg-gradient-to-r from-[var(--brandColor)] to-[var(--accentColor)] px-6 py-4">
+      <div className="bg-[var(--brandColor)] px-6 py-4">
         <h2 className="text-lg font-semibold text-white flex items-center gap-2">
           <BiPlus /> Create New Job Posting
         </h2>
