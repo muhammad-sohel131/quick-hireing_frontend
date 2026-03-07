@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { IoLocationOutline } from "react-icons/io5";
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { useSearchParams, usePathname, useRouter } from "next/navigation";
 
 export default function Search() {
   const router = useRouter();

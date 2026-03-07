@@ -54,7 +54,7 @@ git clone https://github.com/muhammad-sohel131/quick-hireing_frontend.git
 Navigate to the project directory
 
 ```id="yo7g29"
-cd job-portal-frontend
+cd quick-hireing_frontend
 ```
 
 Install dependencies
